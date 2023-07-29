@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-page">
+        <h1>
+            <span id="homework"> Домашнее задание 20 недели.  </span>
+        </h1>
+    </div>
+    <div class="container" id="container">
+        <h2> Что из звёздных войн ищешь ты?</h2>
+        <div class="search">
+            <div class="block glow">
+                <select name="entity" id="entity" class="entity" onchange="checkPlaceholder()">
+                    <option value="films">Films</option>
+                    <option value="people">People</option>
+                    <option value="starships">Starships</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="species">Species</option>
+                    <option value="planets">Planets</option>
+                </select>
+            </div>
+            <div class="block glow">
+                <input type="number" name="ordinal" id="ordinal" class="ordinal" placeholder="number from 1 to 7">
+            </div>
+            <div class="block_btn glow_btn">
+                <button id="btn" type="submit" class="button">GET</button>
+            </div>
+        </div>
+        <div class="result" id="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
